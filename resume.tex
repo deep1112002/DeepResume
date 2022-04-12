@@ -1,0 +1,234 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks, colorlinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\hypersetup{%
+  colorlinks=true,% hyperlinks will be coloured
+  linkcolor=blue,% hyperlink text will be green
+  linkbordercolor=blue,% hyperlink border will be red
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Uzair Ali} \\ \vspace{1pt}
+    \href{mailto:hey@uzair.biz}{\underline{hey@uzair.biz}} $|$ 
+    \href{https://uzair.biz/}{\underline{uzair.biz}} $|$ 
+    \href{https://twitter.com/uzaxirr/}{\underline{Twitter}} $|$ 
+    \href{https://www.linkedin.com/in/uzaxirr/}{\underline{LinkedIn}} $|$
+    \href{https://dev.to/uzaxirr/}{\underline{Dev.to}} $|$
+    \href{https://leetcode.com/uzairmq/}{\underline{Leetcode}} $|$
+    \href{https://github.com/uzaxirr/}{\underline{GitHub}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kalinga Institute of Industrial Technology}{Bhubaneswar,India}
+      {B.Tech in Computer Science and Systems Engineering \textbf{9.64 CGPA}}{September 2020 -- October 2024}
+    %   \resumeItem{Secured \textbf{9.64 CGPA} in 1st year}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Dukaan}{Bengaluru, India}
+      {Backend Engineering Intern}{January 2021 -- Present}
+      \resumeItemListStart
+        \resumeItem{Engineered a in house \textbf{monitoring tool} for getting \textbf{real time analytics and application logs} using \textbf{Rabbit MQ, Django} with a Publisher-Subscriber model and created a \textbf{Python SDK} for the same.}
+        \resumeItem{Responsible For \textbf{creating data pipeline for Data Analytics team} using celery and Django.}
+        \resumeItem{Researched and \textbf{Created a custom python library} for a standard way of dealing with HTTP requests across organization.}
+        \resumeItem{\textbf{Integrated Shopify API} which lead to \textbf{30\% increase in costumer acquisition} from Shopify to Dukaan.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {IntelOwl}{\href{https://github.com/intelowlproject/IntelOwl}{github.com/intelowlproject/IntelOwl}}
+      {Open-Source Contributor}{}
+      \resumeItemListStart
+        \resumeItem{IntelOwl (2.1k Stars) is a open-source tool to gather threat intelligence data about a
+file or observable (IP, Domain, Hash etc.) from single API at scale.}
+        \resumeItem{Integrated new threat analyzer APIs using \textbf{Django}}
+        \resumeItem{\textbf{Revamped} and developed new API endpoints in their \textbf{Golang SDK}}
+        \resumeItem{Co-authored Documentation}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Talawa API}{\href{https://github.com/palisadoesFoundation/talawa-api}{github.com/palisadoesFoundation/talawa-api}}
+      {Open-Source Contributor}{}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{GraphQL APIs} using \textbf{ExpressJS} and \textbf{MongoDB}}
+        \resumeItem{Researched on \textbf{Optimizing the query response time} using proper implementation of Data Structure}
+        \resumeItem{\textbf{Improved} the Existing \textbf{Mutation and Query} which \textbf{reduced} response time \textbf{by 2\%}}
+        \resumeItem{Implemented CI/CD Workflows using GitHub Actions}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://integrateme.co/}{\underline{integrateme.co}}}{    [Django, SQLite, ExpressJS]}}{\href{https://github.com/integrateme-co/}{github.com/integrateme-co}}
+          \resumeItemListStart
+           \resumeItem{integrateme.co helps you to integrate different services easily using their APIs}
+           \resumeItem{It can cross-post Blogs Between dev.to, medium and hashnode and sync GitHub issues with Notion}
+           \resumeItem{\textbf{Architected} the \textbf{Backend} infrastructure}
+           \resumeItem{Designed \textbf{REST APIs} following a \textbf{microservice} architecture}
+           \resumeItem{\textbf{Tested API} endpoints using \textbf{pytest} with \textbf{78\% coverage}}
+           \resumeItem{Serving over \textbf{50 active users} per day}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+\resumeSubHeadingListStart
+      \resumeProjectHeading
+       {\textbf{\href{https://shorten.codes/}{\underline{shorten.codes}}}{            [ExpressJS, MongoDB]}}{\href{https://github.com/uzaxirr/shorten.Codes/}{github.com/uzaxirr/shorten.Codes}}
+          \resumeItemListStart
+           \resumeItem{A URL redirect service, handling over \textbf{1,000 requests at peak} load.}
+           \resumeItem{Constructed Authentication system using \textbf{JWT} and \textbf{MongoDB}}
+           \resumeItem{Formulated \textbf{APIs} using \textbf{Express} and \textbf{Node JS}}
+           \resumeItem{\textbf{Reduced latency}  and throughput using hashmaps, \textbf{caching} and multi-threading.}
+           \resumeItem{Authored a blog post describing backend for this project, \href{https://medium.com/@uzair-ali10/building-backend-of-a-url-shortening-service-part-i-b3b834895900}{find it here}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Python, Go, Javascript} \\
+     \textbf{Frameworks and Technologies}{: Django, Echo, Gin, ExpressJS, NodeJS, REST APIs, GraphQL} \\
+     \textbf{Databases}{: PostgreSQL, SQLite, MongoDB, Redis} \\
+     \textbf{Cloud and DevOps}{: Docker, Git, Heroku, Azure, GitHub Actions, AWS (S3, EC2)} \\
+     \textbf{Others}{: Data Structure and Algorithms, System Design and Scaling up a Service}\\
+    }}
+ \end{itemize}
+
+\section{Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \resumeItemListStart
+                \resumeItem{\textbf{\href{Link if any}{Hackathon}}: 1st Runner-up at \href{https://www.hackout.io/}{Hackout 2021} out of 50 teams}
+                \resumeItem{\textbf{\href{Link if any}{Hackathon}}: 1st Runner-up at \href{https://hackmafest.tech/}{HackmaFest} out of 30 teams}
+                \resumeItem{\textbf{\href{Link if any}{Hackathon}}: 2st Runner-up at \href{https://apihacks.co/}{API-Hacks} out of 200 participants}
+      \resumeItemListEnd
+    }}
+ \end{itemize}
+\end{document}
